@@ -15,14 +15,14 @@ sudo su osmc -c "sh /home/osmc/RetroPie/scripts/retropie_watchdog.sh &" &
 
 # check if attract script in chroot is changed and if so, create altered script
 
-sudo chown osmc:osmc /usr/bin/emulationstation
+sudo chown osmc:osmc /usr/bin/attract
 
 echo '#!/bin/bash
 es_bin="/opt/retropie/supplementary/attractmode/bin/attract"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/usr/osmc/bin:/opt/vc/bin
 
 if [[ $(id -u) -eq 0 ]]; then
-    echo "emulationstation should not be run as root. If you used 'sudo attract' please run without sudo."
+    echo "attract should not be run as root. If you used 'sudo attract' please run without sudo."
     exit 1
 fi
 if [[ -n "$(pidof X)" ]]; then
@@ -39,11 +39,11 @@ sudo su osmc -c "nohup openvt -c 7 -f -s attract >/dev/null 2>&1 &" &
 
 sudo openvt -c 7 -s -f clear
 
-# wait a bit to make sure emulationstation is running detached from kodi
+# wait a bit to make sure attract is running detached from kodi
 
 sleep 0.5
 
-# stop kodi to free input devices for emulationstation
+# stop kodi to free input devices for attract
 
 sudo su -c "systemctl stop mediacenter &" &
 
