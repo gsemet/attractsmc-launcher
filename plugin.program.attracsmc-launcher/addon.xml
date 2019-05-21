@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.attracsmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="gsemet">
+<addon id="plugin.program.attracsmc-launcher" name="Attracsmc Launcher" version="0.0.2" provider-name="gsemet">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
