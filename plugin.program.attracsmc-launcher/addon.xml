@@ -10,8 +10,8 @@
         <language/>
         <platform>linux</platform>
         <disclaimer>For Kodi linux (tested on OSMC final)</disclaimer>
-        <summary lang="en">Launch RetroPie from Kodi.</summary>
-        <description lang="en">Launch RetroPie from Kodi.</description>
+        <summary lang="en">Launch Attract Mode from Kodi.</summary>
+        <description lang="en">Launch Attract Mode from Kodi.</description>
         <website>https://github.com/gsemet/attracsmc-launcher/</website>
         <email>me@me.me</email>
     </extension>
